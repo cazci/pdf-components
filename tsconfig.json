@@ -1,6 +1,13 @@
 {
-  "extends": "../../tsconfig.base.json",
   "compilerOptions": {
+    "target": "es2015",
+    "module": "esnext",
+    "moduleResolution": "node",
+    "types": ["node"],
+    "declaration": true,
+    "outDir": "lib",
+    "composite": true,
+    "rootDir": "src",
     "jsx": "react-jsx",
     "allowJs": true,
     "esModuleInterop": true,
@@ -10,14 +17,6 @@
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true
   },
-  "files": [],
-  "include": [],
-  "references": [
-    {
-      "path": "./tsconfig.lib.json"
-    },
-    {
-      "path": "./tsconfig.spec.json"
-    }
-  ]
+  "include": ["**/*.tsx", "**/*.ts"],
+  "exclude": ["**/*.spec.tsx"],
 }
