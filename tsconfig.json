@@ -3,7 +3,6 @@
     "target": "es2015",
     "module": "esnext",
     "moduleResolution": "node",
-    "types": ["node"],
     "declaration": true,
     "outDir": "lib",
     "composite": true,
